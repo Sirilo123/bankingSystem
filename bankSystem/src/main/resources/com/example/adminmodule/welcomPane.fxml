@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="welcomePanel" prefHeight="558.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.WelcomPaneController">
+   <children>
+      <AnchorPane layoutX="43.0" prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: orange;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="48.0" layoutY="338.0" text="Orange Bank" textFill="#f5f3f3">
+               <font>
+                  <Font name="Bauhaus 93" size="20.0" />
+               </font></Label>
+            <ImageView fitHeight="150.0" fitWidth="171.0" layoutX="31.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@bank-4-51.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="exitButton" layoutX="77.0" layoutY="446.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: WHITE;" text="EXIT" textFill="#ff8e05">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="tellerIcon" fitHeight="150.0" fitWidth="150.0" layoutX="484.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@manager.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="userIcon" fitHeight="150.0" fitWidth="136.0" layoutX="255.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@user-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="managerIcon" fitHeight="150.0" fitWidth="200.0" layoutX="248.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@businessman-512.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="adminIcon" fitHeight="150.0" fitWidth="200.0" layoutX="492.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@administrator.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="304.0" layoutY="235.0" opacity="0.71" text="USER" textFill="#f26017">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="534.0" layoutY="235.0" opacity="0.71" text="TELLER" textFill="#f26017">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="285.0" layoutY="465.0" opacity="0.71" text="MANAGER" textFill="#f26017">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="541.0" layoutY="465.0" opacity="0.71" text="ADMIN" textFill="#f26017">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="managerLoginPanel" layoutX="10.0" layoutY="10.0" prefHeight="558.0" prefWidth="729.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="408.0" layoutY="196.0" opacity="0.71" text="MANAGER" textFill="#f26017">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <AnchorPane prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: orange;">
+               <children>
+                  <Label layoutX="48.0" layoutY="338.0" text="Orange Bank" textFill="#f5f3f3">
+                     <font>
+                        <Font name="Bauhaus 93" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="171.0" layoutX="31.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bank-4-51.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="backButton2" layoutX="77.0" layoutY="446.0" mnemonicParsing="false" onAction="#back2" style="-fx-background-color: WHITE;" text="Back" textFill="#ff8e05">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button fx:id="managerLoginButton" layoutX="421.0" layoutY="364.0" mnemonicParsing="false" onAction="#openManagerModule" style="-fx-background-color: white;" text="LOGIN" textFill="#d07a17">
+               <font>
+                  <Font name="Akhbar MT" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="managerID" layoutX="347.0" layoutY="254.0" prefHeight="25.0" prefWidth="212.0" promptText="Enter ID" />
+            <PasswordField fx:id="ManagerPassword" layoutX="347.0" layoutY="322.0" prefHeight="25.0" prefWidth="212.0" promptText="Enter Password" />
+            <ImageView fx:id="managerIcon1" fitHeight="150.0" fitWidth="200.0" layoutX="371.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@businessman-512.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="tellerLoginPanel" layoutX="10.0" layoutY="10.0" prefHeight="558.0" prefWidth="729.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="428.0" layoutY="181.0" opacity="0.71" text="TELLER" textFill="#f26017">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <AnchorPane prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: orange;">
+               <children>
+                  <Label layoutX="48.0" layoutY="338.0" text="Orange Bank" textFill="#f5f3f3">
+                     <font>
+                        <Font name="Bauhaus 93" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="171.0" layoutX="31.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bank-4-51.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="backButton3" layoutX="77.0" layoutY="446.0" mnemonicParsing="false" onAction="#back3" style="-fx-background-color: WHITE;" text="Back" textFill="#ff8e05">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button fx:id="tellerLoginButton" layoutX="421.0" layoutY="364.0" mnemonicParsing="false" style="-fx-background-color: white;" text="LOGIN" textFill="#d07a17">
+               <font>
+                  <Font name="Akhbar MT" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="telerID" layoutX="347.0" layoutY="254.0" prefHeight="25.0" prefWidth="212.0" promptText="Enter ID" />
+            <PasswordField fx:id="tellerPassword" layoutX="347.0" layoutY="322.0" prefHeight="25.0" prefWidth="212.0" promptText="Enter Password" />
+            <ImageView fx:id="tellerIcon1" fitHeight="150.0" fitWidth="150.0" layoutX="378.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@manager.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="adminLoginPanel" layoutX="10.0" layoutY="10.0" prefHeight="558.0" prefWidth="729.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="427.0" layoutY="208.0" opacity="0.71" text="ADMIN" textFill="#f26017">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <AnchorPane prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: orange;">
+               <children>
+                  <Label layoutX="48.0" layoutY="338.0" text="Orange Bank" textFill="#f5f3f3">
+                     <font>
+                        <Font name="Bauhaus 93" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="171.0" layoutX="31.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bank-4-51.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="backButton4" layoutX="77.0" layoutY="446.0" mnemonicParsing="false" onAction="#back4" style="-fx-background-color: WHITE;" text="Back" textFill="#ff8e05">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button fx:id="adminLoginButton" layoutX="421.0" layoutY="364.0" mnemonicParsing="false" onAction="#adminLogin" style="-fx-background-color: white;" text="LOGIN" textFill="#d07a17">
+               <font>
+                  <Font name="Akhbar MT" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="adminID" layoutX="347.0" layoutY="254.0" prefHeight="25.0" prefWidth="212.0" promptText="Enter ID" />
+            <PasswordField fx:id="adminPassword" layoutX="347.0" layoutY="322.0" prefHeight="25.0" prefWidth="212.0" promptText="Enter Password" />
+            <ImageView fx:id="adminIcon1" fitHeight="150.0" fitWidth="200.0" layoutX="378.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@administrator.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="userLoginPanel" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="434.0" layoutY="190.0" opacity="0.71" text="USER" textFill="#f26017">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="userIcon1" fitHeight="150.0" fitWidth="136.0" layoutX="385.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user-512.png" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: orange;">
+               <children>
+                  <Label layoutX="48.0" layoutY="338.0" text="Orange Bank" textFill="#f5f3f3">
+                     <font>
+                        <Font name="Bauhaus 93" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="171.0" layoutX="31.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bank-4-51.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="backButton1" layoutX="77.0" layoutY="446.0" mnemonicParsing="false" onAction="#back1" style="-fx-background-color: WHITE;" text="Back" textFill="#ff8e05">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button fx:id="userLoginButton" layoutX="421.0" layoutY="364.0" mnemonicParsing="false" style="-fx-background-color: white;" text="LOGIN" textFill="#d07a17">
+               <font>
+                  <Font name="Akhbar MT" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="userID" layoutX="347.0" layoutY="254.0" prefHeight="25.0" prefWidth="212.0" promptText="Enter User ID" />
+            <PasswordField fx:id="userPassword" layoutX="347.0" layoutY="322.0" prefHeight="25.0" prefWidth="212.0" promptText="Enter Password" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
