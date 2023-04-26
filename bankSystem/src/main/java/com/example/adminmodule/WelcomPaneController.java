@@ -52,7 +52,7 @@ public class WelcomPaneController implements Initializable {
         FXMLLoader fxmlLoader=new FXMLLoader(WelcomPaneController.class.getResource("adminMain1.fxml"));
         Scene scene=new Scene(fxmlLoader.load());
         Stage stage=new Stage();
-        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        stage =(Stage)((Node)e.getSource()).getScene().getWindow();
         stage.setScene(scene);
         Image icon=new Image("C:\\Users\\Gamers\\Downloads\\bankSystem2\\bankSystem\\src\\main\\resources\\com\\example\\adminmodule\\bank-4-512 (1).png");
         stage.getIcons().add(icon);
@@ -92,7 +92,7 @@ public class WelcomPaneController implements Initializable {
         FXMLLoader fxmlLoader=new FXMLLoader(AdminMain1Controller.class.getResource("Managermodule1.fxml"));
         Scene scene=new Scene(fxmlLoader.load());
         Stage stage=new Stage();
-
+        stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         Image icon=new Image("C:\\Users\\Gamers\\Downloads\\bankSystem2\\bankSystem\\src\\main\\resources\\com\\example\\adminmodule\\bank-4-512 (1).png");
         stage.getIcons().add(icon);
 
