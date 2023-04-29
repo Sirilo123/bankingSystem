@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.useraccount.mainUserController">
+   <children>
+      <Button id="glass" layoutX="634.0" layoutY="498.0" mnemonicParsing="false" onAction="#switchToMainUser" prefHeight="36.0" prefWidth="97.0" stylesheets="@UserAccount.css" text="BACK">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font></Button>
+      <AnchorPane layoutX="14.0" layoutY="46.0" prefHeight="475.0" prefWidth="117.0" style="-fx-background-color: ORANGE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0">
+         <children>
+            <Button id="red" fx:id="exitButtonBalance" layoutX="26.0" layoutY="424.0" mnemonicParsing="false" onAction="#exitButtonBalance" stylesheets="@UserAccount.css" text="EXIT">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <AnchorPane layoutX="257.0" layoutY="12.0" prefHeight="84.0" prefWidth="727.0" style="-fx-background-color: orange;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="83.0" layoutX="33.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@white%20logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="203.0" layoutY="10.0" text="ORANGE BANK" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="60.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="245.0" layoutY="111.0" text="CURRENT BALANCE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="162.0" layoutY="167.0" prefHeight="101.0" prefWidth="472.0" style="-fx-border-color: ORANGE;" />
+   </children>
+</AnchorPane>
