@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+
 <AnchorPane prefHeight="698.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.tellerPageController">
    <children>
       <AnchorPane layoutY="-3.0" prefHeight="701.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to right, red , yellow);">
          <children>
-            <Button layoutX="86.0" layoutY="640.0" mnemonicParsing="false" text="BACK" />
+            <Button layoutX="86.0" layoutY="640.0" mnemonicParsing="false" onAction="#switchtoTellerPage" text="BACK" />
             <Label layoutX="31.0" layoutY="30.0" style="-fx-font-family: calibri; -fx-font-size: 28; -fx-font-weight: bold;" text="DEPOSIT" />
          </children>
       </AnchorPane>
