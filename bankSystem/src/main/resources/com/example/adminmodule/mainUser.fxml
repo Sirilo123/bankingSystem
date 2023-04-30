@@ -7,23 +7,23 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainUserScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.useraccount.mainUserController">
+<AnchorPane fx:id="mainUserScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.mainUserController">
    <children>
       <AnchorPane layoutX="187.0" layoutY="104.0" prefHeight="449.0" prefWidth="377.0" style="-fx-background-color: ORANGE;" AnchorPane.bottomAnchor="0.0">
          <children>
-            <Button id="shiny" layoutX="102.0" layoutY="46.0" mnemonicParsing="false" onAction="#switchToViewBalance" prefHeight="46.0" prefWidth="175.0" stylesheets="@UserAccount.css" text="VIEW BALANCE">
+            <Button id="shiny" layoutX="102.0" layoutY="46.0" mnemonicParsing="false" onAction="#switchToViewBalance" prefHeight="46.0" prefWidth="175.0" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="VIEW BALANCE">
                <font>
                   <Font name="Arial Rounded MT Bold" size="20.0" />
                </font></Button>
-            <Button id="shiny" layoutX="77.0" layoutY="161.0" mnemonicParsing="false" onAction="#switchToViewTransaction" prefHeight="46.0" prefWidth="224.0" stylesheets="@UserAccount.css" text="VIEW TRANSACTION">
+            <Button id="shiny" layoutX="77.0" layoutY="161.0" mnemonicParsing="false" onAction="#switchToViewTransaction" prefHeight="46.0" prefWidth="224.0" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="VIEW TRANSACTION">
                <font>
                   <Font name="Arial Rounded MT Bold" size="20.0" />
                </font></Button>
-            <Button id="shiny" layoutX="107.0" layoutY="277.0" mnemonicParsing="false" onAction="#switchToUserInfo" prefHeight="46.0" prefWidth="165.0" stylesheets="@UserAccount.css" text="VIEW PROFILE">
+            <Button id="shiny" layoutX="107.0" layoutY="277.0" mnemonicParsing="false" onAction="#switchToUserInfo" prefHeight="46.0" prefWidth="165.0" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="VIEW PROFILE">
                <font>
                   <Font name="Arial Rounded MT Bold" size="20.0" />
                </font></Button>
-            <Button id="red" fx:id="exitButtonMain" layoutX="156.0" layoutY="375.0" mnemonicParsing="false" onAction="#exitButtonMain" prefHeight="39.0" prefWidth="66.0" stylesheets="@UserAccount.css" text="EXIT">
+            <Button id="red" fx:id="exitButtonMain" layoutX="156.0" layoutY="375.0" mnemonicParsing="false" onAction="#exitButtonMain" prefHeight="39.0" prefWidth="66.0" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="EXIT">
                <font>
                   <Font name="Arial Rounded MT Bold" size="15.0" />
                </font>
@@ -38,21 +38,10 @@
                </font>
             </Label>
             <ImageView fitHeight="81.0" fitWidth="94.0" layoutX="8.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@white%20logo.png" />
-               </image>
+
+
             </ImageView>
          </children>
       </AnchorPane>
-      <ImageView fitHeight="444.0" fitWidth="194.0" layoutY="114.0" pickOnBounds="true">
-         <image>
-            <Image url="@oranges%20background.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="444.0" fitWidth="186.0" layoutX="553.0" layoutY="114.0" pickOnBounds="true">
-         <image>
-            <Image url="@oranges%20background.jpg" />
-         </image>
-      </ImageView>
    </children>
 </AnchorPane>

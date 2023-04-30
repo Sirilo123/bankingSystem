@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -93,7 +94,7 @@ public class WelcomPaneController implements Initializable {
         Scene scene=new Scene(fxmlLoader.load());
         Stage stage=new Stage();
         stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        Image icon=new Image("C:\\Users\\Gamers\\Downloads\\bankSystem2\\bankSystem\\src\\main\\resources\\com\\example\\adminmodule\\bank-4-512 (1).png");
+        Image icon=new Image("C:\\Users\\Operator\\Desktop\\bankingSystem\\bankSystem\\src\\main\\resources\\com\\example\\adminmodule\\bank-4.png");
         stage.getIcons().add(icon);
 
         stage.setResizable(false);
@@ -101,4 +102,21 @@ public class WelcomPaneController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+
+    public void switchtoTellerPage(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("tellerPage.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void switchtoUserPage(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("mainUser.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
 }

@@ -17,7 +17,7 @@ public class Main extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("welcomPane.fxml"));
         Parent root=fxmlLoader.load();
 
-        Image icon=new Image("C:\\Users\\Gamers\\Downloads\\bankSystem2\\bankSystem\\src\\main\\resources\\com\\example\\adminmodule\\bank-4-512 (1).png");
+        Image icon=new Image("C:\\Users\\Operator\\Desktop\\bankingSystem\\bankSystem\\src\\main\\resources\\com\\example\\adminmodule\\bank-4-51.png");
         stage.getIcons().add(icon);
 
         stage.setResizable(false);

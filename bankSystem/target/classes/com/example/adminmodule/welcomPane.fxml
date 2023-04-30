@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="welcomePanel" prefHeight="558.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.WelcomPaneController">
+<AnchorPane fx:id="welcomePanel" prefHeight="558.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.WelcomPaneController">
    <children>
       <AnchorPane layoutX="43.0" prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: orange;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -135,7 +135,7 @@
                   </Button>
                </children>
             </AnchorPane>
-            <Button fx:id="tellerLoginButton" layoutX="421.0" layoutY="364.0" mnemonicParsing="false" style="-fx-background-color: white;" text="LOGIN" textFill="#d07a17">
+            <Button fx:id="tellerLoginButton" layoutX="421.0" layoutY="364.0" mnemonicParsing="false" onAction="#switchtoTellerPage" style="-fx-background-color: white;" text="LOGIN" textFill="#d07a17">
                <font>
                   <Font name="Akhbar MT" size="15.0" />
                </font>
@@ -220,7 +220,7 @@
                   </Button>
                </children>
             </AnchorPane>
-            <Button fx:id="userLoginButton" layoutX="421.0" layoutY="364.0" mnemonicParsing="false" style="-fx-background-color: white;" text="LOGIN" textFill="#d07a17">
+            <Button fx:id="userLoginButton" layoutX="421.0" layoutY="364.0" mnemonicParsing="false" onAction="#switchtoUserPage" style="-fx-background-color: white;" text="LOGIN" textFill="#d07a17">
                <font>
                   <Font name="Akhbar MT" size="15.0" />
                </font>

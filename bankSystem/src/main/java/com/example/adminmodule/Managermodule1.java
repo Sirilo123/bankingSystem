@@ -67,7 +67,7 @@ public class Managermodule1 implements Initializable {
         Stage stage=new Stage();
         stage =(Stage)((Node)e.getSource()).getScene().getWindow();
         stage.setScene(scene);
-        Image icon=new Image("C:\\Users\\Gamers\\Downloads\\bankSystem2\\bankSystem\\src\\main\\resources\\com\\example\\adminmodule\\bank-4-512 (1).png");
+        Image icon=new Image("C:\\Users\\Operator\\Desktop\\bankingSystem\\bankSystem\\src\\main\\resources\\com\\example\\adminmodule\\bank-4.png");
         stage.getIcons().add(icon);
         stage.setResizable(false);
         stage.setTitle("UPDATE ACCOUNT");
@@ -79,7 +79,7 @@ public class Managermodule1 implements Initializable {
         Stage stage=new Stage();
         stage =(Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setScene(scene);
-        Image icon=new Image("C:\\Users\\Gamers\\Downloads\\bankSystem2\\bankSystem\\src\\main\\resources\\com\\example\\adminmodule\\bank-4-512 (1).png");
+        Image icon=new Image("C:\\Users\\Operator\\Desktop\\bankingSystem\\bankSystem\\src\\main\\resources\\com\\example\\adminmodule\\bank-4.png");
         stage.getIcons().add(icon);
         stage.setResizable(false);
         stage.setTitle("View Account");

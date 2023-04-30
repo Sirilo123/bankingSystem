@@ -27,14 +27,14 @@
       </AnchorPane>
       <AnchorPane layoutX="22.0" layoutY="103.0" prefHeight="455.0" prefWidth="137.0" style="-fx-background-color: orange;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="103.0">
          <children>
-            <Button id="red" fx:id="exitLoanButton" layoutX="14.0" layoutY="412.0" mnemonicParsing="false" onAction="#exitLoanButton" stylesheets="@UserAccount.css" text="EXIT">
+            <Button id="red" fx:id="exitLoanButton" layoutX="14.0" layoutY="412.0" mnemonicParsing="false" onAction="#exitLoanButton" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="EXIT">
                <font>
                   <Font name="Arial Rounded MT Bold" size="15.0" />
                </font>
             </Button>
          </children>
       </AnchorPane>
-      <Button id="glass" layoutX="663.0" layoutY="517.0" mnemonicParsing="false" onAction="#switchToViewTransaction2" stylesheets="@UserAccount.css" text="BACK">
+      <Button id="glass" layoutX="663.0" layoutY="517.0" mnemonicParsing="false" onAction="#switchToViewTransaction2" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="BACK">
          <font>
             <Font name="Arial Rounded MT Bold" size="15.0" />
          </font>

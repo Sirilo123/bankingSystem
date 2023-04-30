@@ -9,13 +9,13 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.useraccount.mainUserController">
    <children>
-      <Button id="glass" layoutX="634.0" layoutY="498.0" mnemonicParsing="false" onAction="#switchToMainUser" prefHeight="36.0" prefWidth="97.0" stylesheets="@UserAccount.css" text="BACK">
+      <Button id="glass" layoutX="634.0" layoutY="498.0" mnemonicParsing="false" onAction="#switchToMainUser" prefHeight="36.0" prefWidth="97.0" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="BACK">
          <font>
             <Font name="Arial Rounded MT Bold" size="15.0" />
          </font></Button>
       <AnchorPane layoutX="14.0" layoutY="46.0" prefHeight="475.0" prefWidth="117.0" style="-fx-background-color: ORANGE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0">
          <children>
-            <Button id="red" fx:id="exitButtonBalance" layoutX="26.0" layoutY="424.0" mnemonicParsing="false" onAction="#exitButtonBalance" stylesheets="@UserAccount.css" text="EXIT">
+            <Button id="red" fx:id="exitButtonBalance" layoutX="26.0" layoutY="424.0" mnemonicParsing="false" onAction="#exitButtonBalance" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="EXIT">
                <font>
                   <Font name="Arial Rounded MT Bold" size="15.0" />
                </font>

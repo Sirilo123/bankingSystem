@@ -16,7 +16,7 @@
             <Font name="Arial Rounded MT Bold" size="30.0" />
          </font>
       </Label>
-      <Button id="glass" layoutX="643.0" layoutY="508.0" mnemonicParsing="false" onAction="#switchToMainUser2" prefHeight="36.0" prefWidth="87.0" stylesheets="@UserAccount.css" text="BACK">
+      <Button id="glass" layoutX="643.0" layoutY="508.0" mnemonicParsing="false" onAction="#switchToMainUser2" prefHeight="36.0" prefWidth="87.0" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="BACK">
          <font>
             <Font name="Arial Rounded MT Bold" size="15.0" />
          </font>
@@ -46,12 +46,12 @@
       </TableView>
       <AnchorPane layoutX="18.0" layoutY="96.0" prefHeight="463.0" prefWidth="126.0" style="-fx-background-color: orange;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0">
          <children>
-            <Button id="red" fx:id="exitButtonTransaction" layoutX="35.0" layoutY="407.0" mnemonicParsing="false" onAction="#exitButtonTransaction" stylesheets="@UserAccount.css" text="EXIT">
+            <Button id="red" fx:id="exitButtonTransaction" layoutX="35.0" layoutY="407.0" mnemonicParsing="false" onAction="#exitButtonTransaction" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="EXIT">
                <font>
                   <Font name="Arial Rounded MT Bold" size="15.0" />
                </font>
             </Button>
-            <Button id="shiny" layoutX="3.0" layoutY="35.0" mnemonicParsing="false" onAction="#switchToViewLoanTransaction" prefHeight="27.0" prefWidth="136.0" stylesheets="@UserAccount.css" text="VIEW LOAN">
+            <Button id="shiny" layoutX="3.0" layoutY="35.0" mnemonicParsing="false" onAction="#switchToViewLoanTransaction" prefHeight="27.0" prefWidth="136.0" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="VIEW LOAN">
                <font>
                   <Font name="Arial Rounded MT Bold" size="15.0" />
                </font>
