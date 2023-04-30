@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.AdminMain1Controller">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="587.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="43.0">
+         <children>
+            <Label layoutX="338.0" layoutY="204.0" prefHeight="30.0" prefWidth="328.0" text="VIEW ALL BANK APP USERS" textFill="#908c8c">
+               <font>
+                  <Font name="Bodoni MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="338.0" layoutY="355.0" prefHeight="30.0" prefWidth="245.0" text="REMOVE ANY USER" textFill="#908c8c">
+               <font>
+                  <Font name="Bodoni MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="338.0" layoutY="286.0" prefHeight="22.0" prefWidth="217.0" text="ADD NEW USER" textFill="#908c8c">
+               <font>
+                  <Font name="Bodoni MT Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="245.0" layoutY="86.0" prefHeight="60.0" prefWidth="252.0" text="WELCOM ADMIN" textFill="#e4a213" AnchorPane.leftAnchor="245.0" AnchorPane.rightAnchor="244.0" AnchorPane.topAnchor="86.0">
+               <font>
+                  <Font name="Agency FB" size="50.0" />
+               </font>
+            </Label>
+            <Label layoutX="309.0" layoutY="429.0" prefHeight="17.0" prefWidth="233.0" text="-Navigate the menu bar for options" textFill="#a19994">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="100.0" layoutX="249.0" layoutY="189.0" opacity="0.57" pickOnBounds="true" preserveRatio="true" style="-fx-image: grey;">
+               <image>
+                  <Image url="@user-256.jpg" />
+               </image></ImageView>
+            <ImageView fitHeight="60.0" fitWidth="100.0" layoutX="261.0" layoutY="259.0" opacity="0.59" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@add-user-256.gif" />
+               </image></ImageView>
+            <ImageView fitHeight="60.0" fitWidth="100.0" layoutX="261.0" layoutY="325.0" opacity="0.61" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@remove-user-512.jpg" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="43.0" prefWidth="741.0" style="-fx-background-color: orange;">
+         <children>
+            <Button fx:id="menuButton" layoutY="2.0" mnemonicParsing="false" onAction="#menu" style="-fx-background-color: orange;" text="MENU" textFill="#fffefe">
+               <font>
+                  <Font name="Agency FB Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="401.0" layoutY="6.0" text="BANK" textFill="#fffefe">
+               <font>
+                  <Font name="Bodoni MT" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="279.0" layoutY="7.0" text="ORANGE" textFill="#fffefe">
+               <font>
+                  <Font name="Bodoni MT" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane1" layoutX="280.0" layoutY="164.0" prefHeight="182.0" prefWidth="191.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="pane2" layoutX="10.0" layoutY="53.0" prefHeight="520.0" prefWidth="144.0" style="-fx-background-color: orange;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Button fx:id="viewtelerButon" layoutX="27.0" layoutY="192.0" mnemonicParsing="false" onAction="#viewTeller" style="-fx-background-color: orange;" text="VIEW TELLERS" textFill="#fffefe">
+               <font>
+                  <Font name="Agency FB Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewClientsButton" layoutX="28.0" layoutY="232.0" mnemonicParsing="false" onAction="#viewClients" style="-fx-background-color: orange;" text="VIEW CLIENTS" textFill="#fffefe">
+               <font>
+                  <Font name="Agency FB Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="logoutButton" layoutX="31.0" layoutY="305.0" mnemonicParsing="false" style="-fx-background-color: orange;" text="LOG OUT" textFill="#fffefe">
+               <font>
+                  <Font name="Agency FB Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitButton1" layoutX="31.0" layoutY="344.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: orange;" text="EXIT" textFill="#fffefe">
+               <font>
+                  <Font name="Agency FB Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewManagers" layoutX="30.0" layoutY="271.0" mnemonicParsing="false" onAction="#viewManager" style="-fx-background-color: orange;" text="VIEW MANAGERS" textFill="#fffefe">
+               <font>
+                  <Font name="Agency FB Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="132.0" layoutX="7.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@bank-4-51.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="viewTellerPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="43.0" prefWidth="741.0" style="-fx-background-color: orange;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="401.0" layoutY="6.0" text="BANK" textFill="#fffefe">
+                     <font>
+                        <Font name="Bodoni MT" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="279.0" layoutY="7.0" text="ORANGE" textFill="#fffefe">
+                     <font>
+                        <Font name="Bodoni MT" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ScrollPane layoutX="7.0" layoutY="43.0" prefHeight="419.0" prefWidth="741.0" AnchorPane.bottomAnchor="96.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="403.0" prefWidth="740.0">
+                     <children>
+                        <TableView fx:id="tellerTable" prefHeight="406.0" prefWidth="740.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Button fx:id="removeTellerButon" layoutX="398.0" layoutY="491.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Remove" textFill="#ff510c">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="tellerIdToRemove" layoutX="151.0" layoutY="491.0" prefHeight="25.0" prefWidth="233.0" promptText="Enter teller Id to remove" />
+            <Button fx:id="addnewTellerButton" layoutX="455.0" layoutY="492.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Add new Teller" textFill="#ff510c">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="backButton" layoutX="562.0" layoutY="492.0" mnemonicParsing="false" onAction="#backToFirstPane" style="-fx-background-color: white;" text="back" textFill="#ff510c">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="viewClientsPanel" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="43.0" prefWidth="741.0" style="-fx-background-color: orange;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="401.0" layoutY="6.0" text="BANK" textFill="#fffefe">
+                     <font>
+                        <Font name="Bodoni MT" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="279.0" layoutY="7.0" text="ORANGE" textFill="#fffefe">
+                     <font>
+                        <Font name="Bodoni MT" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ScrollPane layoutX="7.0" layoutY="43.0" prefHeight="419.0" prefWidth="741.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="43.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="403.0" prefWidth="740.0">
+                     <children>
+                        <TableView fx:id="ClientTable" prefHeight="406.0" prefWidth="740.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-4.0">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="C1" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <Button fx:id="addnewClientButton" layoutX="506.0" layoutY="502.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Add new Client" textFill="#ff510c">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="backButton2" layoutX="620.0" layoutY="502.0" mnemonicParsing="false" onAction="#backToFirstPane2" style="-fx-background-color: white;" text="back" textFill="#ff510c">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="removeClientButon" layoutX="398.0" layoutY="502.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Remove Client" textFill="#ff510c">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="clientIdToRemove" layoutX="145.0" layoutY="501.0" prefHeight="25.0" prefWidth="233.0" promptText="Enter client Id to remove" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="viewManagerPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ScrollPane layoutX="17.0" layoutY="53.0" prefHeight="419.0" prefWidth="741.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="43.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="403.0" prefWidth="740.0">
+                     <children>
+                        <TableView fx:id="ManagerTable" prefHeight="406.0" prefWidth="740.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-4.0">
+                           <columns>
+                              <TableColumn prefWidth="75.0" style="-fx-background-color: white;" text="C1" />
+                              <TableColumn prefWidth="75.0" style="-fx-background-color: white;" text="C2" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <AnchorPane prefHeight="43.0" prefWidth="741.0" style="-fx-background-color: orange;">
+               <children>
+                  <Label layoutX="401.0" layoutY="6.0" text="BANK" textFill="#fffefe">
+                     <font>
+                        <Font name="Bodoni MT" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="279.0" layoutY="7.0" text="ORANGE" textFill="#fffefe">
+                     <font>
+                        <Font name="Bodoni MT" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="addnewManagerButton1" layoutX="466.0" layoutY="494.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Add new Manager" textFill="#ff510c">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="backButton3" layoutX="585.0" layoutY="494.0" mnemonicParsing="false" onAction="#backToFirstPane3" style="-fx-background-color: white;" text="back" textFill="#ff510c">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="removeManagerButon" layoutX="352.0" layoutY="494.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Remove Maneger" textFill="#ff510c">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="ManagerIdToRemove1" layoutX="112.0" layoutY="493.0" prefHeight="25.0" prefWidth="233.0" promptText="Enter Manager Id to remove" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
