@@ -4,32 +4,36 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.mainUserController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="741.0" style="-fx-background-color: #353333;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.mainUserController">
    <children>
-      <AnchorPane layoutX="-3.0" layoutY="24.0" prefHeight="96.0" prefWidth="741.0" style="-fx-background-color: orange;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+      <AnchorPane layoutX="-3.0" layoutY="1.0" prefHeight="105.0" prefWidth="741.0" style="-fx-background-color: linear-gradient(to right, red , yellow);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
          <children>
             <ImageView fitHeight="78.0" fitWidth="81.0" layoutX="43.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
 
 
 
             </ImageView>
-            <Label layoutX="228.0" layoutY="14.0" style="-fx-background-color: ORANGE;" text="ORANGE BANK" textFill="WHITE">
+            <Label layoutX="228.0" layoutY="14.0" text="ORANGE BANK" textFill="WHITE">
                <font>
                   <Font name="Bauhaus 93" size="60.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="22.0" layoutY="103.0" prefHeight="455.0" prefWidth="137.0" style="-fx-background-color: orange;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="103.0">
+      <AnchorPane layoutX="22.0" layoutY="107.0" prefHeight="448.0" prefWidth="137.0" style="-fx-background-color: linear-gradient(to right, red , yellow) linear-gradient(to right, red , yellow);" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="107.0">
          <children>
             <Button id="red" fx:id="exitLoanButton" layoutX="14.0" layoutY="412.0" mnemonicParsing="false" onAction="#exitLoanButton" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="EXIT">
                <font>
                   <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="251.0" mnemonicParsing="false" text="VIEW">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
                </font>
             </Button>
          </children>

@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="558.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.CreateManAccController">
+<AnchorPane prefHeight="558.0" prefWidth="741.0" style="-fx-background-color: #353333;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.CreateManAccController">
    <children>
-      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="43.0" prefWidth="741.0" style="-fx-background-color: orange;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="43.0" prefWidth="741.0" style="-fx-background-color: linear-gradient(to right, red , yellow);" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Label layoutX="401.0" layoutY="6.0" text="BANK" textFill="#fffefe">
                <font>
@@ -30,12 +30,12 @@
       <TextField fx:id="id" layoutX="356.0" layoutY="101.0" prefHeight="25.0" prefWidth="197.0" />
       <TextField fx:id="telephone" layoutX="356.0" layoutY="436.0" prefHeight="25.0" prefWidth="197.0" />
       <TextField fx:id="gender" layoutX="356.0" layoutY="247.0" prefHeight="25.0" prefWidth="197.0" />
-      <Button fx:id="cancelButton" layoutX="363.0" layoutY="487.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: orange;" text="Cancel" textFill="WHITE">
+      <Button fx:id="cancelButton" layoutX="363.0" layoutY="487.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: linear-gradient(to right, red , yellow);" text="Cancel" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="registerButton" layoutX="500.0" layoutY="487.0" mnemonicParsing="false" onAction="#add" style="-fx-background-color: orange;" text="Register" textFill="WHITE">
+      <Button fx:id="registerButton" layoutX="500.0" layoutY="487.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: linear-gradient(to right, red , yellow) linear-gradient(to right, red , yellow);" text="Register" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

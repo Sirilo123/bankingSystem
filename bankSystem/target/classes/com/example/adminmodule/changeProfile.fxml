@@ -8,10 +8,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.ChangeProfile">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #353333;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.ChangeProfile">
    <children>
-      <AnchorPane layoutY="105.0" prefHeight="295.0" prefWidth="200.0" style="-fx-background-color: Orange;" />
-      <AnchorPane layoutX="1.0" prefHeight="96.0" prefWidth="600.0" style="-fx-background-color: orange;">
+      <AnchorPane layoutY="96.0" prefHeight="304.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to right, red , yellow);" />
+      <AnchorPane layoutX="1.0" prefHeight="96.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to right, red , yellow);">
          <children>
             <ImageView fitHeight="100.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -25,14 +25,14 @@
             </Label>
          </children>
       </AnchorPane>
-      <Label layoutX="232.0" layoutY="143.0" text="Change DOB" />
-      <Label layoutX="232.0" layoutY="182.0" text="Change Gender" />
-      <Label layoutX="235.0" layoutY="224.0" text="Change Salary" />
-      <Label layoutX="232.0" layoutY="268.0" text="Change Phone Number" />
+      <Label layoutX="206.0" layoutY="144.0" text="Change DOB" textFill="#eeeeee" />
+      <Label layoutX="206.0" layoutY="183.0" text="Change Gender" textFill="#fff0f0" />
+      <Label layoutX="206.0" layoutY="225.0" text="Change Salary" textFill="#f2e6e6" />
+      <Label layoutX="206.0" layoutY="269.0" text="Change Phone Number" textFill="#fcfafa" />
       <TextField fx:id="birthDate" layoutX="373.0" layoutY="139.0" />
       <TextField fx:id="gender" layoutX="373.0" layoutY="178.0" />
       <TextField fx:id="salary" layoutX="373.0" layoutY="220.0" />
       <TextField fx:id="phoneNumber" layoutX="373.0" layoutY="264.0" />
-      <Button fx:id="Exit2" layoutX="429.0" layoutY="317.0" mnemonicParsing="false" onAction="#Exit2" style="-fx-background-color: orange;" text="EXIT" textFill="#f6f5f5" />
+      <Button fx:id="Exit2" layoutX="429.0" layoutY="317.0" mnemonicParsing="false" onAction="#Exit2" prefHeight="31.0" prefWidth="70.0" style="-fx-background-color: linear-gradient(to right, red , yellow);" text="EXIT" textFill="#f6f5f5" />
    </children>
 </AnchorPane>

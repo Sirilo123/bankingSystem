@@ -189,7 +189,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="userLoginPanel" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="userLoginPanel" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #353333;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Label layoutX="434.0" layoutY="190.0" opacity="0.71" text="USER" textFill="#f26017">
                <font>
@@ -201,7 +201,7 @@
                   <Image url="@user-512.png" />
                </image>
             </ImageView>
-            <AnchorPane prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: orange;">
+            <AnchorPane prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: linear-gradient(to right, red , yellow);">
                <children>
                   <Label layoutX="48.0" layoutY="338.0" text="Orange Bank" textFill="#f5f3f3">
                      <font>

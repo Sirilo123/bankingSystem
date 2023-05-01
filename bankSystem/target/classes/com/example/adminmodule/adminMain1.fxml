@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.AdminMain1Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="741.0" style="-fx-background-color: #353333;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.AdminMain1Controller">
    <children>
-      <AnchorPane prefHeight="200.0" prefWidth="587.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="43.0">
+      <AnchorPane prefHeight="200.0" prefWidth="587.0" style="-fx-background-color: #353333;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="43.0">
          <children>
             <Label layoutX="338.0" layoutY="204.0" prefHeight="30.0" prefWidth="328.0" text="VIEW ALL BANK APP USERS" textFill="#908c8c">
                <font>
@@ -54,7 +54,7 @@
                </image></ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane prefHeight="43.0" prefWidth="741.0" style="-fx-background-color: orange;">
+      <AnchorPane prefHeight="43.0" prefWidth="741.0" style="-fx-background-color: linear-gradient(to right, red , yellow);">
          <children>
             <Button fx:id="menuButton" layoutY="2.0" mnemonicParsing="false" onAction="#menu" style="-fx-background-color: orange;" text="MENU" textFill="#fffefe">
                <font>
@@ -73,8 +73,8 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="pane1" layoutX="280.0" layoutY="164.0" prefHeight="182.0" prefWidth="191.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <AnchorPane fx:id="pane2" layoutX="10.0" layoutY="53.0" prefHeight="520.0" prefWidth="144.0" style="-fx-background-color: orange;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+      <AnchorPane fx:id="pane1" layoutX="280.0" layoutY="164.0" prefHeight="182.0" prefWidth="191.0" style="-fx-background-color: #353333;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="pane2" layoutX="10.0" layoutY="53.0" prefHeight="520.0" prefWidth="144.0" style="-fx-background-color: linear-gradient(to right, red , yellow);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
          <children>
             <Button fx:id="viewtelerButon" layoutX="27.0" layoutY="192.0" mnemonicParsing="false" onAction="#viewTeller" style="-fx-background-color: orange;" text="VIEW TELLERS" textFill="#fffefe">
                <font>
@@ -108,7 +108,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="viewClientsPanel" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="viewClientsPanel" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #353333;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <AnchorPane prefHeight="43.0" prefWidth="741.0" style="-fx-background-color: orange;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
@@ -159,7 +159,7 @@
             <TextField fx:id="clientIdToRemove" layoutX="145.0" layoutY="501.0" prefHeight="25.0" prefWidth="233.0" promptText="Enter client Id to remove" />
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="viewManagerPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="viewManagerPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #353333ite;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <ScrollPane layoutX="17.0" layoutY="53.0" prefHeight="419.0" prefWidth="741.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="43.0">
                <content>
@@ -213,9 +213,9 @@
             <TextField fx:id="ManagerIdToRemove1" layoutX="112.0" layoutY="493.0" prefHeight="25.0" prefWidth="233.0" promptText="Enter Manager Id to remove" />
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="viewTellerPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="viewTellerPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #353333;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <AnchorPane prefHeight="43.0" prefWidth="741.0" style="-fx-background-color: orange;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane prefHeight="43.0" prefWidth="741.0" style="-fx-background-color: linear-gradient(to right, red , yellow);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
                   <Label layoutX="401.0" layoutY="6.0" text="BANK" textFill="#fffefe">
                      <font>
@@ -250,13 +250,13 @@
                   <Font name="Berlin Sans FB" size="13.0" />
                </font>
             </Button>
-            <TextField fx:id="tellerIdToRemove" layoutX="151.0" layoutY="491.0" prefHeight="25.0" prefWidth="233.0" promptText="Enter teller Id to remove" />
-            <Button fx:id="addnewTellerButton" layoutX="455.0" layoutY="492.0" mnemonicParsing="false" onAction="#addTell" style="-fx-background-color: white;" text="Add new Teller" textFill="#ff510c">
+            <TextField fx:id="tellerIdToRemove" layoutX="90.0" layoutY="492.0" prefHeight="25.0" prefWidth="233.0" promptText="Enter teller Id to remove" />
+            <Button fx:id="addnewTellerButton" layoutX="510.0" layoutY="491.0" mnemonicParsing="false" onAction="#addTell" style="-fx-background-color: white;" text="Add new Teller" textFill="#ff510c">
                <font>
                   <Font name="Berlin Sans FB" size="13.0" />
                </font>
             </Button>
-            <Button fx:id="backButton" layoutX="562.0" layoutY="492.0" mnemonicParsing="false" onAction="#backToFirstPane" style="-fx-background-color: white;" text="back" textFill="#ff510c">
+            <Button fx:id="backButton" layoutX="666.0" layoutY="491.0" mnemonicParsing="false" onAction="#backToFirstPane" style="-fx-background-color: white;" text="back" textFill="#ff510c">
                <font>
                   <Font name="Berlin Sans FB" size="13.0" />
                </font>

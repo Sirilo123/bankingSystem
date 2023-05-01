@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="626.0" prefWidth="805.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.tellerPageController">
+<AnchorPane prefHeight="626.0" prefWidth="805.0" style="-fx-background-color: #353333;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.tellerPageController">
    <children>
       <AnchorPane layoutX="-2.0" layoutY="-1.0" prefHeight="626.0" prefWidth="208.0" style="-fx-background-color: linear-gradient(to right, red , yellow);">
          <children>

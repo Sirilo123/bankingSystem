@@ -4,12 +4,11 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.mainUserController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="741.0" style="-fx-background-color: #353333;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.mainUserController">
    <children>
       <Label layoutX="273.0" layoutY="106.0" text="TRANSACTIONS:">
          <font>
@@ -21,7 +20,7 @@
             <Font name="Arial Rounded MT Bold" size="15.0" />
          </font>
       </Button>
-      <AnchorPane layoutX="8.0" layoutY="18.0" prefHeight="89.0" prefWidth="511.0" style="-fx-background-color: orange;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+      <AnchorPane layoutX="8.0" layoutY="-3.0" prefHeight="102.0" prefWidth="741.0" style="-fx-background-color: linear-gradient(to right, red , yellow);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0">
          <children>
             <Label layoutX="184.0" layoutY="11.0" prefHeight="60.0" prefWidth="459.0" text="ORANGE BANK" textFill="WHITE" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="11.0">
                <font>
@@ -33,16 +32,16 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <TableView fx:id="transactionTable" layoutX="160.0" layoutY="142.0" prefHeight="344.0" prefWidth="526.0" style="-fx-border-color: orange;">
+      <TableView fx:id="transactionTable" layoutX="160.0" layoutY="142.0" prefHeight="344.0" prefWidth="580.0" style="-fx-border-color: orange;">
         <columns>
           <TableColumn fx:id="transactionID" prefWidth="110.0" text="Transaction ID" />
           <TableColumn fx:id="accountID" prefWidth="101.0" text="Account ID" />
             <TableColumn fx:id="transactionType" prefWidth="127.0" text="Transaction Type" />
-            <TableColumn fx:id="amount" prefWidth="81.0" text="Amount" />
-            <TableColumn fx:id="dateTime" prefWidth="105.0" text="Date&amp;Time" />
+            <TableColumn fx:id="amount" prefWidth="107.0" text="Amount" />
+            <TableColumn fx:id="dateTime" prefWidth="136.0" text="Date&amp;Time" />
         </columns>
       </TableView>
-      <AnchorPane layoutX="18.0" layoutY="96.0" prefHeight="463.0" prefWidth="126.0" style="-fx-background-color: orange;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0">
+      <AnchorPane layoutY="96.0" prefHeight="458.0" prefWidth="149.0" style="-fx-background-color: linear-gradient(to right, red , yellow);" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0">
          <children>
             <Button id="red" fx:id="exitButtonTransaction" layoutX="35.0" layoutY="407.0" mnemonicParsing="false" onAction="#exitButtonTransaction" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="EXIT">
                <font>

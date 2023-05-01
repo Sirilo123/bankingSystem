@@ -6,30 +6,30 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainUserScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.mainUserController">
+<AnchorPane fx:id="mainUserScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="741.0" style="-fx-background-color: #353333;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.mainUserController">
    <children>
-      <AnchorPane layoutX="187.0" layoutY="104.0" prefHeight="449.0" prefWidth="377.0" style="-fx-background-color: ORANGE;" AnchorPane.bottomAnchor="0.0">
+      <AnchorPane layoutX="184.0" layoutY="104.0" prefHeight="449.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(to right, red , yellow);" AnchorPane.bottomAnchor="0.0">
          <children>
-            <Button id="shiny" layoutX="102.0" layoutY="46.0" mnemonicParsing="false" onAction="#switchToViewBalance" prefHeight="46.0" prefWidth="175.0" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="VIEW BALANCE">
+            <Button id="shiny" layoutX="102.0" layoutY="46.0" mnemonicParsing="false" onAction="#switchToViewBalance" prefHeight="46.0" prefWidth="211.0" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="VIEW BALANCE">
                <font>
                   <Font name="Arial Rounded MT Bold" size="20.0" />
                </font></Button>
-            <Button id="shiny" layoutX="77.0" layoutY="161.0" mnemonicParsing="false" onAction="#switchToViewTransaction" prefHeight="46.0" prefWidth="224.0" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="VIEW TRANSACTION">
+            <Button id="shiny" layoutX="77.0" layoutY="161.0" mnemonicParsing="false" onAction="#switchToViewTransaction" prefHeight="46.0" prefWidth="289.0" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="VIEW TRANSACTION">
                <font>
                   <Font name="Arial Rounded MT Bold" size="20.0" />
                </font></Button>
-            <Button id="shiny" layoutX="107.0" layoutY="277.0" mnemonicParsing="false" onAction="#switchToUserInfo" prefHeight="46.0" prefWidth="165.0" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="VIEW PROFILE">
+            <Button id="shiny" layoutX="72.0" layoutY="277.0" mnemonicParsing="false" onAction="#switchToUserInfo" prefHeight="46.0" prefWidth="289.0" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="VIEW PROFILE">
                <font>
                   <Font name="Arial Rounded MT Bold" size="20.0" />
                </font></Button>
-            <Button id="red" fx:id="exitButtonMain" layoutX="156.0" layoutY="375.0" mnemonicParsing="false" onAction="#exitButtonMain" prefHeight="39.0" prefWidth="66.0" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="EXIT">
+            <Button id="red" fx:id="exitButtonMain" layoutX="200.0" layoutY="368.0" mnemonicParsing="false" onAction="#exitButtonMain" prefHeight="39.0" prefWidth="66.0" stylesheets="@../../../../../../../UserAccount/src/main/resources/com/example/useraccount/UserAccount.css" text="EXIT">
                <font>
                   <Font name="Arial Rounded MT Bold" size="15.0" />
                </font>
             </Button>
          </children>
       </AnchorPane>
-      <AnchorPane layoutY="14.0" prefHeight="104.0" prefWidth="763.0" style="-fx-background-color: orange;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+      <AnchorPane layoutY="14.0" prefHeight="104.0" prefWidth="763.0" style="-fx-background-color: linear-gradient(to right, red , yellow);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
          <children>
             <Label layoutX="182.0" layoutY="18.0" text="ORANGE BANK" textFill="WHITE">
                <font>
