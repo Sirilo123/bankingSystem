@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="558.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.CreateUserAccController">
+    <children>
+        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="43.0" prefWidth="741.0" style="-fx-background-color: orange;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="401.0" layoutY="6.0" text="BANK" textFill="#fffefe">
+                    <font>
+                        <Font name="Bodoni MT" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="279.0" layoutY="7.0" text="ORANGE" textFill="#fffefe">
+                    <font>
+                        <Font name="Bodoni MT" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <TextField fx:id="name" layoutX="356.0" layoutY="149.0" prefHeight="25.0" prefWidth="197.0" />
+        <TextField fx:id="dob" layoutX="356.0" layoutY="196.0" prefHeight="25.0" prefWidth="197.0" />
+        <TextField fx:id="password" layoutX="356.0" layoutY="289.0" prefHeight="25.0" prefWidth="197.0" />
+        <TextField fx:id="address" layoutX="356.0" layoutY="332.0" prefHeight="25.0" prefWidth="197.0" />
+        <TextField fx:id="balance" layoutX="356.0" layoutY="382.0" prefHeight="25.0" prefWidth="197.0" />
+        <TextField fx:id="id" layoutX="356.0" layoutY="101.0" prefHeight="25.0" prefWidth="197.0" />
+        <TextField fx:id="telephone" layoutX="356.0" layoutY="436.0" prefHeight="25.0" prefWidth="197.0" />
+        <TextField fx:id="gender" layoutX="356.0" layoutY="247.0" prefHeight="25.0" prefWidth="197.0" />
+        <Button fx:id="cancelButton" layoutX="363.0" layoutY="487.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: orange;" text="Cancel" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="registerButton" layoutX="500.0" layoutY="487.0" mnemonicParsing="false" onAction="#add" style="-fx-background-color: orange;" text="Register" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="246.0" layoutY="103.0" opacity="0.84" text="ID" textFill="#ff7308">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="246.0" layoutY="151.0" opacity="0.84" text="NAME" textFill="#ff7308">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="246.0" layoutY="198.0" opacity="0.84" text="DOB" textFill="#ff7308">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="249.0" layoutY="249.0" opacity="0.84" text="GENDER" textFill="#ff7308">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="237.0" layoutY="291.0" opacity="0.84" text="PASSWORD" textFill="#ff7308">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="235.0" layoutY="334.0" opacity="0.84" text="ADDRESS" textFill="#ff7308">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="260.0" layoutY="384.0" opacity="0.84" text="Balance" textFill="#ff7308">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="262.0" layoutY="438.0" opacity="0.84" text="PHONE" textFill="#ff7308">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

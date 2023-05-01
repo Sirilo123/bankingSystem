@@ -86,7 +86,7 @@
                   <Font name="Agency FB Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="logoutButton" layoutX="31.0" layoutY="305.0" mnemonicParsing="false" style="-fx-background-color: orange;" text="LOG OUT" textFill="#fffefe">
+            <Button fx:id="logoutButton" layoutX="31.0" layoutY="305.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: orange;" text="LOG OUT" textFill="#fffefe">
                <font>
                   <Font name="Agency FB Bold" size="15.0" />
                </font>
@@ -108,54 +108,6 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="viewTellerPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <AnchorPane prefHeight="43.0" prefWidth="741.0" style="-fx-background-color: orange;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <children>
-                  <Label layoutX="401.0" layoutY="6.0" text="BANK" textFill="#fffefe">
-                     <font>
-                        <Font name="Bodoni MT" size="24.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="279.0" layoutY="7.0" text="ORANGE" textFill="#fffefe">
-                     <font>
-                        <Font name="Bodoni MT" size="24.0" />
-                     </font>
-                  </Label>
-               </children>
-            </AnchorPane>
-            <ScrollPane layoutX="7.0" layoutY="43.0" prefHeight="419.0" prefWidth="741.0" AnchorPane.bottomAnchor="96.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="403.0" prefWidth="740.0">
-                     <children>
-                        <TableView fx:id="tellerTable" prefHeight="406.0" prefWidth="740.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                          <columns>
-                            <TableColumn prefWidth="75.0" text="C1" />
-                            <TableColumn prefWidth="75.0" text="C2" />
-                          </columns>
-                        </TableView>
-                     </children>
-                  </AnchorPane>
-              </content>
-            </ScrollPane>
-            <Button fx:id="removeTellerButon" layoutX="398.0" layoutY="491.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Remove" textFill="#ff510c">
-               <font>
-                  <Font name="Berlin Sans FB" size="13.0" />
-               </font>
-            </Button>
-            <TextField fx:id="tellerIdToRemove" layoutX="151.0" layoutY="491.0" prefHeight="25.0" prefWidth="233.0" promptText="Enter teller Id to remove" />
-            <Button fx:id="addnewTellerButton" layoutX="455.0" layoutY="492.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Add new Teller" textFill="#ff510c">
-               <font>
-                  <Font name="Berlin Sans FB" size="13.0" />
-               </font>
-            </Button>
-            <Button fx:id="backButton" layoutX="562.0" layoutY="492.0" mnemonicParsing="false" onAction="#backToFirstPane" style="-fx-background-color: white;" text="back" textFill="#ff510c">
-               <font>
-                  <Font name="Berlin Sans FB" size="13.0" />
-               </font>
-            </Button>
-         </children>
-      </AnchorPane>
       <AnchorPane fx:id="viewClientsPanel" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <AnchorPane prefHeight="43.0" prefWidth="741.0" style="-fx-background-color: orange;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -174,19 +126,22 @@
             </AnchorPane>
             <ScrollPane layoutX="7.0" layoutY="43.0" prefHeight="419.0" prefWidth="741.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="43.0">
                <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="403.0" prefWidth="740.0">
-                     <children>
-                        <TableView fx:id="ClientTable" prefHeight="406.0" prefWidth="740.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-4.0">
-                           <columns>
-                              <TableColumn prefWidth="75.0" text="C1" />
-                              <TableColumn prefWidth="75.0" text="C2" />
-                           </columns>
-                        </TableView>
-                     </children>
-                  </AnchorPane>
+                  <TableView fx:id="ClientTable" prefHeight="410.0" prefWidth="795.0">
+                     <columns>
+                        <TableColumn fx:id="C_id" prefWidth="56.0" text="C_id" />
+                        <TableColumn fx:id="C_acc_Name" prefWidth="82.0" text="C_acc_Name" />
+                        <TableColumn fx:id="C_acc_No" prefWidth="83.0" text="C_acc_No" />
+                        <TableColumn fx:id="C_dob" prefWidth="72.0" text="C_dob" />
+                        <TableColumn fx:id="C_gender" prefWidth="74.0" text="C_gender" />
+                        <TableColumn fx:id="C_password" prefWidth="94.0" text="C_password" />
+                        <TableColumn fx:id="C_address" prefWidth="89.0" text="C_address" />
+                        <TableColumn fx:id="C_balance" prefWidth="74.0" text="C_balance" />
+                        <TableColumn fx:id="C_phone" prefWidth="49.0" text="C_phone" />
+                     </columns>
+                  </TableView>
                </content>
             </ScrollPane>
-            <Button fx:id="addnewClientButton" layoutX="506.0" layoutY="502.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Add new Client" textFill="#ff510c">
+            <Button fx:id="addnewClientButton" layoutX="506.0" layoutY="502.0" mnemonicParsing="false" onAction="#addUser" style="-fx-background-color: white;" text="Add new Client" textFill="#ff510c">
                <font>
                   <Font name="Berlin Sans FB" size="13.0" />
                </font>
@@ -210,10 +165,16 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="403.0" prefWidth="740.0">
                      <children>
-                        <TableView fx:id="ManagerTable" prefHeight="406.0" prefWidth="740.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-4.0">
+                        <TableView fx:id="ManagerTable" prefHeight="406.0" prefWidth="740.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-4.0">
                            <columns>
-                              <TableColumn prefWidth="75.0" style="-fx-background-color: white;" text="C1" />
-                              <TableColumn prefWidth="75.0" style="-fx-background-color: white;" text="C2" />
+                              <TableColumn fx:id="M_id" prefWidth="46.0" text="M_id" />
+                              <TableColumn fx:id="M_name" prefWidth="135.0" text="M_name" />
+                              <TableColumn fx:id="M_dob" prefWidth="104.0" text="M_dob" />
+                              <TableColumn fx:id="M_gender" minWidth="7.0" prefWidth="106.0" text="M_gender" />
+                              <TableColumn fx:id="M_password" minWidth="1.0" prefWidth="81.0" text="M_password" />
+                              <TableColumn fx:id="M_address" prefWidth="75.0" text="M_address" />
+                              <TableColumn fx:id="M_salary" prefWidth="83.0" text="M_salary" />
+                              <TableColumn fx:id="M_phone" prefWidth="109.0" text="M_phone" />
                            </columns>
                         </TableView>
                      </children>
@@ -234,7 +195,7 @@
                   </Label>
                </children>
             </AnchorPane>
-            <Button fx:id="addnewManagerButton1" layoutX="466.0" layoutY="494.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Add new Manager" textFill="#ff510c">
+            <Button fx:id="addnewManagerButton1" layoutX="466.0" layoutY="494.0" mnemonicParsing="false" onAction="#addMan" style="-fx-background-color: white;" text="Add new Manager" textFill="#ff510c">
                <font>
                   <Font name="Berlin Sans FB" size="13.0" />
                </font>
@@ -250,6 +211,56 @@
                </font>
             </Button>
             <TextField fx:id="ManagerIdToRemove1" layoutX="112.0" layoutY="493.0" prefHeight="25.0" prefWidth="233.0" promptText="Enter Manager Id to remove" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="viewTellerPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="43.0" prefWidth="741.0" style="-fx-background-color: orange;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="401.0" layoutY="6.0" text="BANK" textFill="#fffefe">
+                     <font>
+                        <Font name="Bodoni MT" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="279.0" layoutY="7.0" text="ORANGE" textFill="#fffefe">
+                     <font>
+                        <Font name="Bodoni MT" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ScrollPane layoutX="7.0" layoutY="43.0" prefHeight="419.0" prefWidth="741.0" AnchorPane.bottomAnchor="96.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <content>
+                  <TableView fx:id="tellerTable" prefHeight="406.0" prefWidth="926.0">
+                     <columns>
+                        <TableColumn fx:id="T_id" prefWidth="52.0" text="T_id" />
+                        <TableColumn fx:id="T_name" prefWidth="106.0" text="T_name" />
+                        <TableColumn fx:id="T_dob" prefWidth="113.0" text="T_dob" />
+                        <TableColumn fx:id="T_gender" prefWidth="106.0" text="T_gender" />
+                        <TableColumn fx:id="T_password" prefWidth="119.0" text="T_password" />
+                        <TableColumn fx:id="T_address" minWidth="0.0" prefWidth="101.0" text="T_address" />
+                        <TableColumn fx:id="T_salary" prefWidth="142.0" text="T_salary" />
+                        <TableColumn fx:id="T_phone" prefWidth="132.0" text="T_phone" />
+                     </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <Button fx:id="removeTellerButon" layoutX="398.0" layoutY="491.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Remove" textFill="#ff510c">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="tellerIdToRemove" layoutX="151.0" layoutY="491.0" prefHeight="25.0" prefWidth="233.0" promptText="Enter teller Id to remove" />
+            <Button fx:id="addnewTellerButton" layoutX="455.0" layoutY="492.0" mnemonicParsing="false" onAction="#addTell" style="-fx-background-color: white;" text="Add new Teller" textFill="#ff510c">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="backButton" layoutX="562.0" layoutY="492.0" mnemonicParsing="false" onAction="#backToFirstPane" style="-fx-background-color: white;" text="back" textFill="#ff510c">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </children>
