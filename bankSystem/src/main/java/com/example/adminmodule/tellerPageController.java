@@ -85,4 +85,12 @@ public class tellerPageController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+
+    public void exit(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("welcomPane.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }

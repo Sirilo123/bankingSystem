@@ -6,14 +6,14 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="803.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.tellerPageController">
+<AnchorPane prefHeight="803.0" prefWidth="831.0" style="-fx-background-color: #353333;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.tellerPageController">
    <children>
       <AnchorPane prefHeight="803.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to right, red , yellow);">
          <children>
             <Button layoutX="47.0" layoutY="189.0" mnemonicParsing="false" onAction="#switchtoDepositPage" prefHeight="32.0" prefWidth="99.0" text="DEPOSIT" />
             <Button layoutX="43.0" layoutY="323.0" mnemonicParsing="false" onAction="#switchtoWithdrawPage" prefHeight="32.0" prefWidth="99.0" text="WITHDRAW" />
             <Button layoutX="43.0" layoutY="430.0" mnemonicParsing="false" onAction="#switchtoTranferPage" prefHeight="32.0" prefWidth="107.0" text="TRANSFER" />
-            <Button layoutX="47.0" layoutY="562.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="116.0" text="LOG OUT" />
+            <Button layoutX="47.0" layoutY="562.0" mnemonicParsing="false" onAction="#exit" prefHeight="32.0" prefWidth="116.0" text="LOG OUT" />
             <Label layoutX="86.0" layoutY="43.0" style="-fx-font-family: calibri; -fx-font-size: 28; -fx-font-weight: Bold;" text="MENU" />
          </children>
       </AnchorPane>
