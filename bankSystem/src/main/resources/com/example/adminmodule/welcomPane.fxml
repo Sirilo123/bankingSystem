@@ -11,7 +11,7 @@
 
 <AnchorPane fx:id="welcomePanel" prefHeight="558.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminmodule.WelcomPaneController">
    <children>
-      <AnchorPane layoutX="43.0" prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: orange;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane layoutX="43.0" prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: linear-gradient(to right, red , yellow);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Label layoutX="48.0" layoutY="338.0" text="Orange Bank" textFill="#f5f3f3">
                <font>
@@ -69,7 +69,7 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <AnchorPane fx:id="managerLoginPanel" layoutX="10.0" layoutY="10.0" prefHeight="558.0" prefWidth="729.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="managerLoginPanel" layoutX="10.0" layoutY="10.0" prefHeight="558.0" prefWidth="729.0" style="-fx-background-color: #353333;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Label layoutX="408.0" layoutY="196.0" opacity="0.71" text="MANAGER" textFill="#f26017">
                <font>
@@ -109,7 +109,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="tellerLoginPanel" layoutX="10.0" layoutY="10.0" prefHeight="558.0" prefWidth="729.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="tellerLoginPanel" layoutX="10.0" layoutY="10.0" prefHeight="558.0" prefWidth="729.0" style="-fx-background-color: #353333;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Label layoutX="428.0" layoutY="181.0" opacity="0.71" text="TELLER" textFill="#f26017">
                <font>
@@ -149,7 +149,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="adminLoginPanel" layoutX="10.0" layoutY="10.0" prefHeight="558.0" prefWidth="729.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="adminLoginPanel" layoutX="10.0" layoutY="10.0" prefHeight="558.0" prefWidth="729.0" style="-fx-background-color: #353333;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Label layoutX="427.0" layoutY="208.0" opacity="0.71" text="ADMIN" textFill="#f26017">
                <font>
