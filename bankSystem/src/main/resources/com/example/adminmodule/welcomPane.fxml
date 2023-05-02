@@ -76,7 +76,7 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <AnchorPane prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: orange;">
+            <AnchorPane prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: linear-gradient(to right, red , yellow);">
                <children>
                   <Label layoutX="48.0" layoutY="338.0" text="Orange Bank" textFill="#f5f3f3">
                      <font>
@@ -116,7 +116,7 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <AnchorPane prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: orange;">
+            <AnchorPane prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: linear-gradient(to right, red , yellow);">
                <children>
                   <Label layoutX="48.0" layoutY="338.0" text="Orange Bank" textFill="#f5f3f3">
                      <font>
@@ -156,7 +156,7 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <AnchorPane prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: orange;">
+            <AnchorPane prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: linear-gradient(to right, red , yellow);">
                <children>
                   <Label layoutX="48.0" layoutY="338.0" text="Orange Bank" textFill="#f5f3f3">
                      <font>
