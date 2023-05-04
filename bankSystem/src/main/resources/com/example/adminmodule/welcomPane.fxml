@@ -95,7 +95,7 @@
                   </Button>
                </children>
             </AnchorPane>
-            <Button fx:id="managerLoginButton" layoutX="421.0" layoutY="364.0" mnemonicParsing="false" onAction="#openManagerModule" style="-fx-background-color: white;" text="LOGIN" textFill="#d07a17">
+            <Button fx:id="managerLoginButton" layoutX="421.0" layoutY="364.0" mnemonicParsing="false" onAction="#managerLogin" style="-fx-background-color: white;" text="LOGIN" textFill="#d07a17">
                <font>
                   <Font name="Akhbar MT" size="15.0" />
                </font>
@@ -135,7 +135,7 @@
                   </Button>
                </children>
             </AnchorPane>
-            <Button fx:id="tellerLoginButton" layoutX="421.0" layoutY="364.0" mnemonicParsing="false" onAction="#switchtoTellerPage" style="-fx-background-color: white;" text="LOGIN" textFill="#d07a17">
+            <Button fx:id="tellerLoginButton" layoutX="421.0" layoutY="364.0" mnemonicParsing="false" onAction="#tellerLogin" style="-fx-background-color: white;" text="LOGIN" textFill="#d07a17">
                <font>
                   <Font name="Akhbar MT" size="15.0" />
                </font>
@@ -220,7 +220,7 @@
                   </Button>
                </children>
             </AnchorPane>
-            <Button fx:id="userLoginButton" layoutX="421.0" layoutY="364.0" mnemonicParsing="false" onAction="#switchtoUserPage" style="-fx-background-color: white;" text="LOGIN" textFill="#d07a17">
+            <Button fx:id="userLoginButton" layoutX="421.0" layoutY="364.0" mnemonicParsing="false" onAction="#userLogin" style="-fx-background-color: white;" text="LOGIN" textFill="#d07a17">
                <font>
                   <Font name="Akhbar MT" size="15.0" />
                </font>
