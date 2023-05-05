@@ -9,6 +9,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static javafx.application.Application.launch;
+
 public class Main extends Application {
 
     double x,y=0;
@@ -17,7 +19,7 @@ public class Main extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("welcomPane.fxml"));
         Parent root=fxmlLoader.load();
 
-        Image icon=new Image("C:\\Users\\Operator\\Desktop\\bankingSystem\\bankSystem\\src\\main\\resources\\com\\example\\adminmodule\\bank-4-51.png");
+        Image icon=new Image("C:\\Users\\shali\\OneDrive\\Desktop\\bankingSystem\\bankSystem\\src\\main\\resources\\com\\example\\adminmodule");
         stage.getIcons().add(icon);
 
         stage.setResizable(false);

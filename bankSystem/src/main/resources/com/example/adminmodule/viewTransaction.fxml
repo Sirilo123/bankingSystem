@@ -37,7 +37,7 @@
           <TableColumn fx:id="transactionID" prefWidth="110.0" text="Transaction ID" />
           <TableColumn fx:id="accountID" prefWidth="101.0" text="Account ID" />
             <TableColumn fx:id="transactionType" prefWidth="127.0" text="Transaction Type" />
-            <TableColumn fx:id="amount" prefWidth="107.0" text="Amount" />
+            <TableColumn fx:id="amountTransaction" prefWidth="107.0" text="Amount" />
             <TableColumn fx:id="dateTime" prefWidth="136.0" text="Date&amp;Time" />
         </columns>
       </TableView>

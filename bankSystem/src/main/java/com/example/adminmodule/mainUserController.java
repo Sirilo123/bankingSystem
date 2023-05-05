@@ -6,10 +6,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class mainUserController {
     private Stage stage;
@@ -21,6 +25,47 @@ public class mainUserController {
     private Button exitButtonBalance;
     @FXML
     private Button exitButtonTransaction;
+
+    //For Loan
+    @FXML
+    public TableView<tableModelLoan> loanTable;
+    @FXML
+    public TableColumn<Integer, tableModelLoan> loanID;
+    @FXML
+    public TableColumn<Integer, tableModelLoan> id;
+    @FXML
+    public TableColumn<Integer, tableModelLoan> userID;
+    @FXML
+    public TableColumn<String, tableModelLoan> loanType;
+    @FXML
+    public TableColumn<Double, tableModelLoan> amount;
+    @FXML
+    public TableColumn<Double, tableModelLoan> interestRate;
+    @FXML
+    public TableColumn<LocalDate, tableModelLoan> dateApproved;
+
+    //For Transactions
+
+    @FXML
+    public TableView<tableModelTransaction> transactionTable;
+
+    @FXML
+    public TableColumn<Integer, tableModelTransaction> transactionID;
+
+    @FXML
+    public TableColumn<Integer, tableModelTransaction> accountID;
+
+    @FXML
+    public TableColumn<String, tableModelTransaction> transactionType;
+
+    @FXML
+    public TableColumn<Double, tableModelTransaction> amountTransaction;
+
+    @FXML
+    public TableColumn<LocalDateTime, tableModelTransaction> dateTime;
+
+
+
 
 
 
