@@ -9,7 +9,7 @@ public class tableModelTeller {
     private String T_address;
     private double T_salary;
     private String T_phone;
-    public tableModelTeller(Integer id, String name, String dob, char gender, String password, String address, double salary, String phone ){
+    public tableModelTeller(Integer id, String name, String dob, String gender, String password, String address, double salary, String phone ){
 
         this.T_id=id;
         this.T_name=name;

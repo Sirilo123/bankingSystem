@@ -9,7 +9,7 @@ public class tableModelmanager {
     private String M_address;
     private double M_salary;
     private String M_phone;
-    public tableModelmanager(Integer id, String name, String dob, char gender, String password, String address, double salary, String phone ){
+    public tableModelmanager(Integer id, String name, String dob, String gender, String password, String address, double salary, String phone ){
 
         this.M_id=id;
         this.M_name=name;

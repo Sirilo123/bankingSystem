@@ -11,8 +11,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
@@ -21,6 +23,7 @@ import javafx.util.Duration;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.*;
 import java.util.ResourceBundle;
 
 public class AdminMain1Controller implements Initializable {
@@ -58,6 +61,9 @@ public class AdminMain1Controller implements Initializable {
     public TableColumn<String,tableModelClients> C_acc_Name,C_dob,C_gender,C_password,C_address,C_phone;
     @FXML
     public TableColumn<Double,tableModelClients> C_balance;
+    @FXML
+    public TextField clientIdToRemove,ManagerIdToRemove1,tellerIdToRemove;
+
     @FXML
     public AnchorPane pane1,pane2, viewTellerPane,viewClientsPanel,viewManagerPane;
 
@@ -125,10 +131,113 @@ public class AdminMain1Controller implements Initializable {
             translateTransition1.play();
         });
 
+
+
+
+        String query1,query2,query3;
+        query1="select* from manager;";
+        query2="select* from usertable;";
+        query3="select* from teller;";
+        Connection cn= null;
+
+        try {
+            cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/orangeBank","root","Alidor24%");
+            Statement st1=cn.createStatement();
+            Statement st2=cn.createStatement();
+            Statement st3=cn.createStatement();
+            ResultSet rt1=st1.executeQuery(query1);
+            ResultSet rt2=st2.executeQuery(query2);
+            ResultSet rt3=st3.executeQuery(query3);
+
+            while(rt1.next()){
+                managerTableData.add(new tableModelmanager(
+                        rt1.getInt(1),
+                        rt1.getString(2),
+                        String.valueOf(rt1.getDate(3)),
+                        rt1.getString(4),
+                        rt1.getString(5),
+                        rt1.getString(6),
+                        rt1.getDouble(7),
+                        rt1.getString(8)
+                ));
+            }
+            while(rt2.next()){
+                clientTableData.add(new tableModelClients(
+                        rt2.getInt(1),
+                        rt2.getString(2),
+                        String.valueOf(rt2.getDate(3)),
+                        rt2.getString(4),
+                        rt2.getString(5),
+                        rt2.getString(6),
+                        rt2.getDouble(7),
+                        rt2.getString(8)
+                ));
+            }
+            while(rt3.next()){
+                tellerTableData.add(new tableModelTeller(
+                        rt3.getInt(1),
+                        rt3.getString(2),
+                        String.valueOf(rt3.getDate(3)),
+                        rt3.getString(4),
+                        rt3.getString(5),
+                        rt3.getString(6),
+                        rt3.getDouble(7),
+                        rt3.getString(8)
+                ));
+            }
+
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
         ClientTable.setItems(clientTableData);
         ManagerTable.setItems(managerTableData);
-        tellerTable.setItems(clientTableData);
+        tellerTable.setItems(tellerTableData);
     }
+    public void removeTeller(ActionEvent e) throws SQLException {
+        if (tellerIdToRemove.getText().equals("")){
+            Alert alert=new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("WARNING");
+            alert.setContentText("PLEASE ENTER ID TO REMOVE");
+        }
+        else{String query="delete from teller where tellerID="+tellerIdToRemove.getText()+";";
+            Connection cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/orangeBank","root","Alidor24%");
+            Statement st=cn.createStatement();
+            st.executeUpdate(query);
+            tellerTable.refresh();
+        }
+
+    }
+    public void removeClients(ActionEvent e) throws SQLException {
+        if (clientIdToRemove.getText().equals("")){
+            Alert alert=new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("WARNING");
+            alert.setContentText("PLEASE ENTER ID TO REMOVE");
+        }
+        else{Connection cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/orangeBank","root","Alidor24%");
+            Statement st=cn.createStatement();
+            String query="delete from usertable where userID="+clientIdToRemove.getText()+";";
+            st.executeUpdate(query);
+            ClientTable.refresh();
+        }
+    }
+    public void removeManager(ActionEvent e) throws SQLException {
+        if (ManagerIdToRemove1.getText().equals("")){
+            Alert alert=new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("WARNING");
+            alert.setContentText("PLEASE ENTER ID TO REMOVE");
+        }
+        else{String query="delete from manager where ManagerID="+ManagerIdToRemove1.getText()+";";
+            Connection cn= DriverManager.getConnection("jdbc:mysql://localhost:3306/orangeBank","root","Alidor24%");
+            Statement st=cn.createStatement();
+            st.executeUpdate(query);
+            ManagerTable.refresh();
+
+        }
+    }
+
+
     public void backToFirstPane(ActionEvent e){
         FadeTransition ft =new FadeTransition(Duration.seconds(0.5), viewTellerPane);
         ft.setFromValue(0);

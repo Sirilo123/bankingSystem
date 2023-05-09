@@ -21,6 +21,10 @@ public class tableModelClients {
         this.C_balance=balance;
         this.C_phone=phone;
     }
+
+    public tableModelClients(int anInt, String string, String valueOf, String string1, String string2, String string3, double aDouble, String string4) {
+    }
+
     public void setC_id(Integer c_Id) {
         C_id = c_Id;
     }

@@ -51,6 +51,8 @@ public class Managermodule1 implements Initializable {
             translateTransition.play();
         });
     }
+
+
     public void showMenu(ActionEvent e){
         pane1.setVisible(true);
         FadeTransition fadeTransition=new FadeTransition(Duration.seconds(0.5),pane1);
